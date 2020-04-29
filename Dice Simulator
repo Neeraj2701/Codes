@@ -1,0 +1,22 @@
+# ROLL UP THE DICE
+
+#We will use random module and while loop for this project.
+
+import random
+start=input('Would you like to roll the dice?: ')
+
+
+#Defining Function to call anytime.
+
+def game():
+    print('Your number is : ', random.randint(1,6))
+    roll_again=input('Would you like to roll again? : ')
+    
+if start=='yes':
+    game()
+    while roll_again=='yes':
+        game()
+elif start=='No':
+    print('Game Over')
+else:
+    print('Dismissed')
