@@ -1,0 +1,42 @@
+x=input('Enter a name: ')
+y=input('Enter Second players name: ')
+z=input('Enter Third players name: ')
+print('\n')
+print('The players are: ',x,y,z,end='')
+print('\n')   
+start=input('Should We start the Game: ')
+print('\n')
+
+def game():
+    print('For',x,':','You got these Chocolates.Keep Smiling')
+    n=len(x)
+    i,j=0,0
+    for i in range(0,n):
+        print()
+        for j in range(0,0+i):
+            print(' * ',end='')
+    print('\n')        
+    print('For',y,':','You got these Chocolates.Keep Smiling')
+    n=len(y)
+    i,j=0,0
+    for i in range(0,n):
+        print()
+        for j in range(0,0+i):
+            print(' ~ ',end='')
+    print('\n')           
+    print('For',z,':','You got these Chocolates.Keep Smiling')
+    n=len(z)
+    i,j=0,0
+    for i in range(0,n):
+        print()
+        for j in range(0,0+i):
+            print(' $ ',end='')
+
+            
+
+if start=='yes':
+    game()
+elif start=='no':
+    print('Ok! Will play sometime later');
+else:
+    print('Game Dismissed.')
